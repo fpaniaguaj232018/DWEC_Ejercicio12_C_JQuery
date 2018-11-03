@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <title>(MODIFICAR - Título del documento)</title>
+    <script>
+    function mostrar(tipo){
+        ocultarTodos();
+        $("."+tipo).css("opacity","1");
+    }
+    function ocultarTodos(){
+        $(".juego").css("opacity","0.2");
+    }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="button" value="TODOS" onclick="mostrar('juego')">
+        <input type="button" value="XBOX ONE" onclick="mostrar('xboxone')">
+        <input type="button" value="PS4" onclick="mostrar('ps4')"">
+        <input type="button" value="PLATAFORMAS" onclick="mostrar('plataformas')">
+        <input type="button" value="FPS" onclick="mostrar('fps')">
+    </div>
+    <div>
+        <img src="images/cb.jpg" class="juego xboxone plataformas" alt="">
+        <img src="images/cod.jpg" class="juego ps4 fps" alt="">
+        <img src="images/gow.jpg" class="juego xboxone fps" alt="">
+    </div>
+    
+    <div>
+        <img src="images/halo.jpg" class="juego xboxone fps" alt="">
+        <img src="images/lnm.jpg" class="juego ps4 plataformas" alt="">
+        <img src="images/tr.jpg" class="juego ps4 fps" alt="">
+    </div>
+</body>
+</html>
